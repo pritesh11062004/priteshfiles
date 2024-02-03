@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        marquee {
+            scrollamount: 800;
+            direction: left;
+            font-size: 200px;
+            color: #0414b8;
+            background-color: black;
+            padding: 10px;
+            scrolldelay: 5;
+        }
+
+        /* Hide the audio controls */
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <marquee scrollamount="25"><b>Hello!!</B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Welcome to Technoत्सव</b></marquee>
+    <!-- Add the audio element below -->
+    <audio controls="false" loop preload="auto" id="backgroundAudio">
+        <source controls autoplay muted src="your-audio-file.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
